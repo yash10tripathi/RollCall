@@ -1,0 +1,156 @@
+.stats-info {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0 0 20px;
+  padding: 15px;
+}
+.stats-info h6 {
+  color: #1f1f1f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+.stats-info h4 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.select2-container .select2-selection--single {
+  border: 1px solid #dcdcdc;
+  height: 50px;
+}
+.cal-icon {
+  position: relative;
+  width: 100%;
+}
+.form-focus .cal-icon:after {
+  top: 15px;
+}
+.cal-icon:after {
+  color: #979797;
+  content: "\f073";
+  display: block;
+  font-family: fontawesome;
+  font-size: 15px;
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.form-focus .focus-label {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 1;
+  color: #888;
+  margin-bottom: 0;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform: translate3d(0, 22px, 0) scale(1);
+  -webkit-transform: translate3d(0, 22px, 0) scale(1);
+  -ms-transform: translate3d(0, 22px, 0) scale(1);
+}
+.form-control-sm.form-control {
+  height: 30px;
+  appearance: auto;
+  border-radius: 0;
+}
+.table {
+  padding: 0;
+  background: #fff;
+}
+.table th {
+  white-space: nowrap;
+  border-top: 1px solid #e2e5e8;
+  padding: 1rem 0.75rem;
+}
+.table-striped tbody tr:nth-of-type(2n + 1) {
+  background-color: #f5f5f5;
+}
+.table td {
+  border-top: 1px solid #e2e5e8;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0.5rem;
+}
+.custom-table td {
+  padding: 10px 20px;
+}
+.table td h2 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+.table td h2 a {
+  color: #333;
+}
+.custom-modal .modal-content {
+  border: 0;
+  border-radius: 10px;
+}
+.custom-modal .modal-content .modal-header {
+  border: 0;
+  padding: 30px 30px 0;
+}
+.custom-modal .modal-content .modal-header .modal-title {
+  font-size: 22px;
+}
+.custom-modal .modal-content .modal-header .close {
+  background-color: #a0a0a0;
+  border: 0;
+  color: #fff;
+  font-size: 13px;
+  height: 20px;
+  line-height: 20px;
+  opacity: 1;
+  width: 20px;
+  z-index: 99;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+}
+.custom-modal .modal-content .modal-body {
+  padding: 30px;
+}
+.custom-modal .modal-content .modal-body .form-group {
+  margin-bottom: 1rem;
+  float: left;
+  width: 100%;
+}
+.text-danger {
+  color: #f62d51 !important;
+}
+.submit-section {
+  text-align: center;
+  margin-top: 40px;
+  float: left;
+  width: 100%;
+}
+.show {
+  display: block !important;
+}
+.select {
+  height: 50px;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+}

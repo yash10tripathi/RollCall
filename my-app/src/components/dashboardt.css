@@ -1,0 +1,753 @@
+.header {
+  background: #00ffab;
+  background: linear-gradient(to right, #00ffab 0%, #05595b 100%);
+  border-bottom: 1px solid transparent;
+  height: 60px;
+  z-index: 1002;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+}
+.header .header-left {
+  float: left;
+  height: 60px;
+  position: relative;
+  text-align: center;
+  width: 230px;
+  z-index: 1;
+  padding: 0 20px;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+@media (min-width: 991px) {
+  .header #toggle_btn {
+    color: #999;
+    float: left;
+    font-size: 26px;
+    line-height: 70px;
+    padding: 0 10px;
+  }
+}
+
+.header .page-title-box {
+  float: left;
+  height: 60px;
+  margin-bottom: 0;
+  padding: 17px 20px;
+  border-radius: 0;
+}
+.header .page-title-box h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+.header .mobile_btn {
+  display: none;
+  float: left;
+}
+.header .user-menu {
+  float: right;
+  margin: 0;
+  position: relative;
+  z-index: 99;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .responsive-search {
+  display: none;
+  color: #fff;
+  font-size: 20px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 15px;
+}
+.header .top-nav-search form {
+  margin-top: 10px;
+  position: relative;
+  width: 230px;
+}
+.form-control {
+  border-color: #e3e3e3;
+  box-shadow: none;
+  font-size: 15px;
+  height: 44px;
+}
+.header .top-nav-search form .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  height: 40px;
+  padding: 10px 50px 10px 15px;
+  border-radius: 50px;
+}
+.header .top-nav-search form .btn {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  min-height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 15px;
+}
+.header .user-menu.nav > li > a {
+  color: #fff;
+  font-size: 15px;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 15px;
+}
+.dropdown-menu {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inherit;
+  font-size: 14px;
+  border-radius: 3px;
+  transform-origin: left top 0;
+  -webkit-transform-origin: left top 0;
+  -ms-transform-origin: left top 0;
+}
+.topnav-dropdown-header {
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-size: 12px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px;
+}
+.header .user-img {
+  display: inline-block;
+  position: relative;
+}
+.header .user-img img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.header .user-img .status {
+  border: 2px solid #fff;
+  height: 10px;
+  width: 10px;
+  background-color: #55ce63;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.sidebar {
+  background-color: white;
+  border-right: 1px solid transparent;
+  margin-top: 0;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 230px;
+  z-index: 1001;
+}
+.slimScrollDiv {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 494px;
+}
+.sidebar .sidebar-menu {
+  padding: 10px 0;
+}
+.sidebar .sidebar-menu ul li.menu-title {
+  color: grey;
+  font-size: 17px;
+  opacity: 1;
+  padding: 5px 15px;
+  white-space: nowrap;
+}
+.submenu li {
+  margin-top: 15px;
+  width: 100%;
+  padding-left: 20px;
+}
+.submenu li:hover {
+  background-color: black;
+}
+.submenu {
+  margin-right: 20px;
+  width: 100%;
+}
+.sidebar .sidebar-menu ul li a {
+  justify-content: flex-start;
+  position: relative;
+  font-size: 15px;
+  color: #b7c0cd;
+  height: auto;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 8px 15px;
+}
+
+.sidebar .sidebar-menu ul ul a.active {
+  color: #00ffab;
+  text-decoration: underline;
+}
+
+.page-wrapper {
+  left: 0;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  margin: 0 0 0 230px;
+  padding: 60px 0 0;
+}
+.page-wrapper .content {
+  padding: 30px;
+}
+.page-wrapper .content .page-header {
+  margin-bottom: 1.875rem;
+}
+.page-wrapper .content .page-header .page-title {
+  color: black;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.breadcrumb {
+  background-color: transparent;
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.card {
+  border: 1px solid #ededed;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
+}
+.dash-widget .card-body {
+  flex-flow: wrap;
+}
+
+.dash-widget .card-body .dash-widget-icon {
+  background-color: rgba(255, 155, 68, 0.2);
+  color: #00ffab;
+  font-size: 30px;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 10px;
+  text-align: center;
+  width: 60px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.dash-widget .card-body .dash-widget-info h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.dash-widget .card-body .dash-widget-info span {
+  font-size: 16px;
+}
+
+.dash-section .dash-info-list .dash-card-container .dash-card-avatars,
+.dash-widget .card-body .dash-widget-info,
+.chat-contents
+  .chat-content-wrap
+  .chats
+  .chat-bubble
+  .chat-img-attach
+  .chat-placeholder {
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+}
+.dash-section .dash-info-list .dash-card,
+.dash-widget .card-body .dash-widget-info,
+.voice-call-avatar,
+.chat-contents
+  .chat-content-wrap
+  .chats
+  .chat-bubble
+  .chat-img-attach
+  .chat-placeholder {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.dash-widget .card-body .dash-widget-info {
+  text-align: right;
+  width: calc(100% - 70px);
+}
+.job-list .job-list-det,
+.rating-list,
+.avatar-dropdown .avatar-group .avatar,
+.task-assign .task-complete-btn,
+.chat-footer .message-bar .message-area .input-group,
+.chat-footer .task-followers,
+.chat-content-wrap .chat-wrap-inner .task-desc .task-textarea,
+.chat-content-wrap .chat-wrap-inner .task-desc,
+.chat-content-wrap .chat-wrap-inner .task-header .task-due-date .remove-icon,
+.chat-content-wrap
+  .chat-wrap-inner
+  .task-header
+  .task-due-date
+  a
+  .chat-content-wrap
+  .chat-wrap-inner
+  .task-header
+  .task-due-date
+  .due-icon,
+.chat-content-wrap .chat-wrap-inner .task-header .task-due-date,
+.chat-content-wrap .chat-wrap-inner .task-header .assignee-info .remove-icon,
+.chat-content-wrap .chat-wrap-inner .task-header .assignee-info a,
+.chat-content-wrap .chat-wrap-inner .task-header,
+.kanban-cont .kanban-list .kanban-header,
+.kanban-cont .kanban-list .kanban-wrap .task-board-body .kanban-footer,
+.kanban-cont .kanban-list .kanban-wrap .task-board-body .kanban-info,
+.kanban-cont .kanban-list .kanban-wrap .task-board-header,
+.kanban-cont,
+.board-view-header .pro-progress-bar,
+.board-view-header .pro-teams .pro-team-members,
+.board-view-header .pro-teams .pro-team-lead,
+.leave-header,
+.leave-item .leave-right,
+.leave-item .leave-row,
+.account-page .main-wrapper,
+.account-page,
+.file-content
+  .file-body
+  .file-scroll
+  .file-content-inner
+  .card-file
+  .card-file-thumb,
+.file-content .file-search .input-group-prepend,
+.file-cont-wrap .file-cont-inner .file-cont-header .file-options,
+.file-cont-wrap .file-cont-inner .file-cont-header,
+.file-cont-wrap,
+.file-wrap .file-sidebar .file-search .input-group .input-group-prepend,
+.file-wrap .file-sidebar .file-header,
+.file-wrap,
+.time-list .dash-stats-list,
+.time-list,
+.dash-section .dash-info-list .dash-card-container .dash-card-avatars,
+.dash-section .dash-info-list .dash-card-container .dash-card-content,
+.dash-section .dash-info-list .dash-card-container .dash-card-icon,
+.dash-section .dash-info-list .dash-card-container,
+.dash-section .dash-info-list .dash-card,
+.welcome-box,
+.dash-statistics .stats-info p,
+.dash-widget .card-body .dash-widget-info,
+.dash-widget .card-body .dash-widget-icon,
+.dash-widget .card-body,
+.error-page .main-wrapper,
+.error-page,
+.call-box .call-wrapper .call-items,
+.call-box .call-wrapper,
+.voice-call-avatar,
+.chat-sidebar
+  .chat-contents
+  .chats
+  .chat-left
+  .chat-body
+  .chat-bubble
+  .chat-content
+  .call-details,
+.chat-contents
+  .chat-content-wrap
+  .chats
+  .chat-bubble
+  .chat-img-attach
+  .chat-placeholder,
+.att-statistics .stats-info p,
+.punch-info .punch-hours,
+.task-board-color .board-color-list,
+.task-follower-list,
+.sidebar .sidebar-menu ul li a,
+.sidebar .sidebar-menu ul li.menu-title,
+.header .user-menu.nav > li.flag-nav a,
+.card .card-title.with-switch,
+.card .leave-inline-form,
+.avatar .avatar-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+.job-list .job-list-det,
+.rating-list span a,
+.task-assign .task-complete-btn,
+.chat-content-wrap .chat-wrap-inner .task-header .task-due-date .remove-icon,
+.chat-content-wrap .chat-wrap-inner .task-header .task-due-date a,
+.chat-content-wrap .chat-wrap-inner .task-header .task-due-date .due-icon,
+.chat-content-wrap .chat-wrap-inner .task-header .task-due-date,
+.chat-content-wrap .chat-wrap-inner .task-header .assignee-info .remove-icon,
+.chat-content-wrap .chat-wrap-inner .task-header .assignee-info a,
+.chat-content-wrap .chat-wrap-inner .task-header .assignee-info,
+.kanban-cont .kanban-list .kanban-header .kanban-action > a,
+.kanban-cont .kanban-list .kanban-header,
+.kanban-cont .kanban-list .kanban-wrap .task-board-body .kanban-info,
+.board-view-header .pro-progress-bar,
+.board-view-header .pro-teams .pro-team-members,
+.board-view-header .pro-teams .pro-team-lead,
+.leave-header,
+.leave-item .leave-right,
+.account-page,
+.file-content
+  .file-body
+  .file-scroll
+  .file-content-inner
+  .card-file
+  .card-file-thumb,
+.file-content
+  .file-body
+  .file-scroll
+  .file-content-inner
+  .card-file
+  .dropdown-file
+  .dropdown-link,
+.file-content .file-search .input-group-prepend,
+.file-cont-wrap .file-cont-inner .file-cont-header,
+.file-wrap .file-sidebar .file-search .input-group .input-group-prepend,
+.file-wrap .file-sidebar .file-header,
+.time-list .dash-stats-list,
+.dash-section .dash-info-list .dash-card-container .dash-card-avatars,
+.dash-section .dash-info-list .dash-card-container .dash-card-content,
+.dash-section .dash-info-list .dash-card-container .dash-card-icon,
+.dash-widget .card-body .dash-widget-icon,
+.error-page .main-wrapper,
+.error-page,
+.call-box .call-wrapper .call-items,
+.call-box .call-wrapper,
+.voice-call-avatar,
+.punch-info .punch-hours,
+.sidebar .sidebar-menu ul li a,
+.header .user-menu.nav > li.flag-nav a,
+.card .leave-inline-form,
+.avatar .avatar-title {
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+.rating-list span a,
+.rating-list,
+.chat-content-wrap .chat-wrap-inner .task-header .task-due-date .remove-icon,
+.chat-content-wrap .chat-wrap-inner .task-header .task-due-date .due-icon,
+.chat-content-wrap .chat-wrap-inner .task-header .assignee-info .remove-icon,
+.kanban-cont .kanban-list .kanban-header .kanban-action > a,
+.account-page .main-wrapper,
+.file-content
+  .file-body
+  .file-scroll
+  .file-content-inner
+  .card-file
+  .card-file-thumb,
+.file-content
+  .file-body
+  .file-scroll
+  .file-content-inner
+  .card-file
+  .dropdown-file
+  .dropdown-link,
+.dash-widget .card-body .dash-widget-icon,
+.error-page .main-wrapper,
+.call-box .call-wrapper .call-items,
+.call-box .call-wrapper,
+.voice-call-avatar,
+.punch-info .punch-hours,
+.custom-modal .modal-content .modal-header,
+.avatar .avatar-title {
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+}
+.dash-widget .card-body .dash-widget-icon {
+  background-color: rgba(255, 155, 68, 0.2);
+  color: #00ffab;
+  font-size: 30px;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 10px;
+  text-align: center;
+  width: 60px;
+  border-radius: 100%;
+}
+
+.card .card-title {
+  color: #1f1f1f;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.dash-statistics .stats-list {
+  height: auto;
+}
+.dash-statistics .stats-info {
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 15px;
+  border-radius: 4px;
+}
+.dash-statistics .stats-info p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+strong {
+  font-weight: 700;
+}
+.dash-statistics .progress {
+  height: 4px;
+}
+.stats-box {
+  background-color: #f9f9f9;
+  border: 1px solid #e3e3e3;
+  margin: 0 0 15px;
+  padding: 5px;
+}
+.stats-box p {
+  margin: 0;
+  font-size: 12px;
+}
+h3 {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+.bg-warning,
+.badge-warning {
+  background-color: #ffbc34 !important;
+}
+.bg-success,
+.badge-success {
+  background-color: #55ce63 !important;
+}
+.bg-danger,
+.badge-danger {
+  background-color: #f62d51 !important;
+}
+p {
+  margin-bottom: 1rem;
+}
+.bg-inverse-danger {
+  background-color: rgba(242, 17, 54, 0.12) !important;
+  color: #e63c3c !important;
+}
+.leave-info-box {
+  border: 1px solid #e5e5e5;
+  margin: 0 0 15px;
+  padding: 15px;
+}
+.avatar {
+  background-color: transparent;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  height: 34px;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 34px;
+  position: relative;
+  white-space: nowrap;
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+}
+.avatar > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.text-sm {
+  font-size: 14px !important;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+}
+.text-muted {
+  color: #8e8e8e !important;
+}
+.bg-inverse-danger {
+  background-color: rgba(242, 17, 54, 0.12) !important;
+  color: #e63c3c !important;
+}
+.bg-inverse-success {
+  background-color: rgba(15, 183, 107, 0.12) !important;
+  color: #26af48 !important;
+}
+.load-more a {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 15px;
+  -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+  border-radius: 3px;
+}
+.header .has-arrow .dropdown-toggle[aria-expanded="true"]:after {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+}
+.slimScrollDiv {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 403px;
+}
+.sidebar .sidebar-inner {
+  height: 100%;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.sidebar .sidebar-menu ul {
+  font-size: 15px;
+  position: relative;
+  padding-left: 0 !important;
+}
+.sidebar .sidebar-menu ul li.menu-title {
+  color: white;
+  font-size: 24px;
+  opacity: 1;
+  font-weight: bold;
+  padding: 5px 15px;
+  white-space: nowrap;
+  align-items: center;
+}
+.sidebar .sidebar-menu ul li a {
+  justify-content: flex-start;
+  position: relative;
+  font-size: 15px;
+  color: #36ae7c;
+  height: auto;
+  font-weight: 700;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 8px 15px;
+}
+.sidebar .sidebar-menu ul li a i {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: middle;
+  width: 20px;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.sidebar {
+  background-color: #97c4b8;
+}

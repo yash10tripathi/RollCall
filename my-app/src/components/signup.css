@@ -1,0 +1,7 @@
+.optionstyle {
+  z-index: -1201;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
+  background: rgb(22, 28, 36);
+  height: 20px;
+}

@@ -1,0 +1,21 @@
+.page-wrapper .content {
+  padding: 30px;
+}
+.form-focus {
+  height: 50px;
+  position: relative;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.d-grid {
+  margin-top: 10px;
+}
+.check-attendance {
+  margin-bottom: 20px;
+}
+.table-responsive {
+  max-height: 350px;
+  overflow-y: scroll;
+}
